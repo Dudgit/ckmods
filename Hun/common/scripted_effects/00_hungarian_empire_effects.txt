@@ -1,0 +1,129 @@
+
+spawn_koppany_troops_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = "Új honfoglalók"
+		men_at_arms = {
+			type = horse_archers
+			stacks = 14
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		location = capital_province
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = "Új honfoglalók"
+		levies = {
+			value = 5000
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 3
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		location = capital_province
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = "Új honfoglalók"
+		levies = {
+			value = 5000
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 3
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		location = capital_province
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = "Új honfoglalók"
+		levies = {
+			value = 5000
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+
+		location = capital_province
+	}
+}

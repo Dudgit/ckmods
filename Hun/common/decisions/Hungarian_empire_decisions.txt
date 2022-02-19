@@ -1,0 +1,62 @@
+﻿
+
+
+##########
+#Become Super Awesome and Hungarian
+# by Dudás Bence
+
+veres_kardot_hoztam= {
+	picture = "gfx/interface/illustrations/decisions/Veres_kard.dds"
+	major = yes
+	desc = "Deak_Bill"
+	selection_tooltip = "Deak_Bill_tooltip"
+
+	ai_check_interval = 0
+
+	cost = { 
+		gold = 500
+		prestige = 2000
+}
+
+	is_shown = {
+		highest_held_title_tier >= tier_duchy
+		is_independent_ruler = no
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:veres_kardot_hoztam
+			}
+		}
+	}
+
+	is_valid = {
+		religion = religion:magyarism_religion
+		prestige_level >= 3
+		highest_held_title_tier <= tier_kingdom
+	}
+
+
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+	}
+
+	effect = {
+
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:veres_kardot_hoztam
+		}
+
+
+		add_dread = 100
+		spawn_koppany_troops_effect  = yes
+
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
