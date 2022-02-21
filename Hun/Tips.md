@@ -1,0 +1,2 @@
+# Ötletek
+Ötlet gyűjtő dokumentum
