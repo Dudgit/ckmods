@@ -1,0 +1,65 @@
+﻿
+
+
+##########
+#Become Super Awesome and Hungarian
+# by Dudás Bence
+
+create_ottoman_dynasty= {
+	picture = "gfx/interface/illustrations/decisions/Veres_kard.dds"
+	major = yes
+	desc = "desc_Ottoman_dyn"
+	selection_tooltip = "Ottoman_dyn_tooltip"
+
+	ai_check_interval = 0
+
+	cost = { 
+		prestige = 20
+	}
+	
+	is_shown = {
+		highest_held_title_tier >= tier_duchy
+		exists = title:k_rum.holder
+		
+		OR = 
+		{
+			any_vassal = { has_title = title:k_rum } 
+			top_liege = { has_title = title:k_rum } 
+		}
+
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:create_ottoman_dynasty
+			}
+#		NOT = { culture = culture:greek }
+		}
+	}
+
+	is_valid = {
+		religion = religion:islam_religion
+	}
+
+
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+	}
+
+	effect = {
+
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:create_ottoman_dynasty
+		}
+
+
+		spawn_koppany_troops_effect  = yes
+
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}

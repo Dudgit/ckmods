@@ -1,0 +1,29 @@
+
+spawn_koppany_troops_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = "Hungarian horse army"
+		levies = {
+			value = 1000
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 10
+		}
+
+		location = capital_province
+	}
+}
